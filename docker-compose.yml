@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  vuejs:
+    build:
+      context: ./
+      dockerfile: Dockerfile-rtug
+    container_name: rtug
+    image: rtug
+    depends_on:
+      - corsproxy
+    ports:
+      - "8088:8080"
+
+  corsproxy:
+    build:
+      context: ./
+      dockerfile: Dockerfile-corsproxy
+    container_name: corsproxy
+    image: corsproxy
+    ports:
+      - "1337:1337"
