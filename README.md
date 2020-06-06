@@ -20,6 +20,7 @@
 `.env` の `VUE_APP_REDMINE_HOST` をチケットを作成する Redmine のホストに変更
 4. API アクセスキーの取得  
 <img src="./assets/key.png" width="25%">
+
 5. API アクセスキーを設定  
 `.env` の `VUE_APP_REDMINE_API_ACCESS_KEY` に取得した API アクセスキーを設定する
 
